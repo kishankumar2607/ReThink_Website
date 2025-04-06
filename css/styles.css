@@ -1,134 +1,158 @@
 /* Reset */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  
-  body {
-    font-family: "Noto Sans", sans-serif;
-    font-size: 16px;
-    line-height: 1.25;
-  }
-  
-  /* container style */
-  .container {
-    width: 100%;
-    margin: 0 auto;
-  }
-  
-  /* header style start */
-  header {
-    position: fixed;
-    z-index: 9999;
-    top: 0;
-    width: 100%;
-    background-color: #183266;
-    padding: 1.5rem 0rem;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08);
-  }
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
-  .header-div{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-  
-  .site-name a {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 16px;
-    font-weight: 600;
-    color: #ffffff;
-    text-decoration: none;
-  }
-  
-  .site-name a img {
-    height: auto;
-    width: 200px;
-  }
-  
-  /* navbar style */
-  .nav-bar {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  
-  .nav-bar ul {
-    display: flex;
-    margin: 0;
-    padding: 0;
-    list-style-type: none;
-  }
-  
-  .nav-bar li {
-    margin: 0 10px;
-  }
-  
-  .nav-bar a {
-    position: relative;
-    color: #ffffff;
-    font-size: 22px;
-    font-weight: 600;
-    text-decoration: none;
-  }
-  
-  .nav-bar a::after {
-    content: "";
-    position: absolute;
-    left: 0;
-    bottom: -5px;
-    width: 0;
-    height: 3.2px;
-    background-color: #ffffff;
-    transition: width 0.3s ease;
-  }
-  
-  .nav-bar a:hover::after {
-    width: 100%;
-  }
+body {
+  font-family: "Noto Sans", sans-serif;
+  font-size: 16px;
+  line-height: 1.25;
+}
 
-  .nav-bar a.active::after {
-    width: 100%;
-  }  
-  
-  .menu-toggle {
-    display: none;
-  }
-  
-  .menu-icon {
-    display: none;
-    width: 30px;
-    height: 24px;
-    position: relative;
-    cursor: pointer;
-  }
-  
-  .menu-icon span {
-    display: block;
-    width: 100%;
-    height: 4px;
-    background-color: #000000;
-    position: absolute;
-    transition: all 0.3s ease;
-  }
-  
-  .menu-icon span:nth-child(1) {
-    top: 0px;
-  }
-  
-  .menu-icon span:nth-child(2) {
-    top: 10px;
-  }
-  
-  .menu-icon span:nth-child(3) {
-    top: 20px;
-  }
-  
-  /* Main div design */
-  
-  main {
-    margin-top: 115px;
-  }
+/* container style */
+.container {
+  width: 100%;
+  margin: 0 auto;
+}
+
+/* header style start */
+header {
+  position: fixed;
+  z-index: 9999;
+  top: 0;
+  width: 100%;
+  background-color: #183266;
+  padding: 1.5rem 0rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08);
+}
+
+.header-div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.site-name a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 16px;
+  font-weight: 600;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.site-name a img {
+  height: auto;
+  width: 200px;
+}
+
+/* navbar style */
+.nav-bar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.nav-bar ul {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.nav-bar li {
+  margin: 0 10px;
+}
+
+.nav-bar a {
+  position: relative;
+  color: #ffffff;
+  font-size: 22px;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.nav-bar a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -5px;
+  width: 0;
+  height: 3.2px;
+  background-color: #ffffff;
+  transition: width 0.3s ease;
+}
+
+.nav-bar a:hover::after {
+  width: 100%;
+}
+
+.nav-bar a.active::after {
+  width: 100%;
+}
+
+.menu-toggle {
+  display: none;
+}
+
+.menu-icon {
+  display: none;
+  width: 30px;
+  height: 24px;
+  position: relative;
+  cursor: pointer;
+}
+
+.menu-icon span {
+  display: block;
+  width: 100%;
+  height: 4px;
+  background-color: #000000;
+  position: absolute;
+  transition: all 0.3s ease;
+}
+
+.menu-icon span:nth-child(1) {
+  top: 0px;
+}
+
+.menu-icon span:nth-child(2) {
+  top: 10px;
+}
+
+.menu-icon span:nth-child(3) {
+  top: 20px;
+}
+
+/* Main div design */
+
+main {
+  margin-top: 115px;
+}
+
+/* main div design  Ends*/
+
+/* footer style */
+
+.footer-logo {
+  width: 200px;
+  height: auto;
+}
+
+.footer-header {
+  font-size: 20px;
+  font-weight: 700;
+  color: #ffffff;
+  margin-bottom: 14px;
+}
+
+.quick-links {
+  padding-left: 8rem !important;
+}
+
+.quick-links ul li {
+  padding-bottom: 0.5rem !important;
+}
