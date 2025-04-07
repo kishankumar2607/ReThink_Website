@@ -1,0 +1,284 @@
+.contact-banner {
+  position: relative;
+  background: url("../images/contact-rethink-banner.jpg") no-repeat center
+    center/cover;
+  height: 90vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  text-align: center;
+}
+
+.contact-banner::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.8);
+}
+
+.contact-banner h1 {
+  position: relative;
+  font-size: 4rem;
+  font-weight: 900;
+  color: #ffffff;
+  z-index: 1;
+}
+
+.contact-info {
+  text-align: center;
+  margin: 3.5rem 0rem;
+}
+
+.contact-info h2 {
+  color: #183266;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+}
+
+.contact-info p {
+  font-size: 18px;
+  font-weight: 600;
+  color: #000000;
+  text-align: center;
+  line-height: 1.6;
+  padding: 0rem 3rem;
+}
+
+.contact-details {
+  background-color: #183266;
+  color: #ffffff;
+  padding: 2rem !important;
+  border-radius: 8px;
+  border: 2px solid #ffffff;
+  box-shadow: 0 2px 15px rgba(89, 91, 233, 0.2);
+}
+
+.contact-details h3 {
+  margin-bottom: 1rem;
+  font-weight: 700;
+}
+
+.contact-details p {
+  font-size: 20px;
+  color: #ffffff;
+  line-height: 1.6;
+}
+
+.contact-details h4 {
+  margin-top: 2rem;
+  font-weight: 700;
+  color: #ffffff;
+}
+
+.contact-details-links {
+  margin-bottom: 0;
+  margin-top: 1rem;
+}
+
+.contact-details-links a {
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 600;
+  padding-left: 10px;
+}
+
+.faq-container {
+  margin: 4rem 0rem;
+}
+
+.faq-container h3 {
+  font-size: 2rem;
+  font-weight: 700;
+  text-align: center;
+  color: #183266;
+  margin-bottom: 1.5rem;
+}
+
+.faq-section {
+  padding: 0rem 4rem;
+  margin-top: 2rem;
+}
+
+.faq-item {
+  margin-bottom: 1.5rem;
+  cursor: pointer;
+  background-color: #183266;
+  color: #ffffff;
+  border-radius: 8px;
+  padding: 1rem 1.5rem;
+}
+
+.question {
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+
+.answer {
+  display: block;
+  font-size: 18px;
+  line-height: 1.6;
+  max-height: 0;
+  overflow: hidden;
+  opacity: 0;
+  transition: max-height 0.5s ease, opacity 0.5s ease;
+}
+
+.faq-item.active .answer {
+  max-height: 300px;
+  opacity: 1;
+  margin-top: 10px;
+}
+
+.contact-form-container {
+  margin-bottom: 4rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.contact-form-container h3 {
+  font-size: 2rem;
+  font-weight: 700;
+  text-align: center;
+  color: #183266;
+  margin-bottom: 1.5rem;
+}
+
+.contact-form-container p {
+  font-size: 20px;
+  font-weight: 600;
+  color: #000000;
+  text-align: center;
+  line-height: 1.6;
+  padding: 0rem 10rem;
+}
+
+.contact-form {
+  min-width: 700px;
+  background-color: #ffffff;
+  padding: 2rem;
+  margin-top: 2.5rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 15px rgba(0, 0, 0, 0.2);
+}
+
+.contact-form label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-size: 20px;
+  font-weight: bold;
+  color: #183266;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 0.75rem;
+  margin-bottom: 1rem;
+  border: 2px solid #183266;
+  border-radius: 4px;
+  font-size: 18px;
+  font-weight: 700;
+  color: #183266;
+}
+
+.contact-form button {
+  background-color: #183266;
+  color: #ffffff;
+  padding: 0.75rem 1.5rem;
+  border: 2px solid #183266;
+  font-size: 18px;
+  font-weight: 700;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 0.3s ease-in;
+}
+.contact-form button:hover {
+  background-color: transparent;
+  color: #183266;
+}
+
+.additional-info {
+  margin-bottom: 4rem;
+}
+
+.additional-info h3 {
+  font-size: 2rem;
+  font-weight: 700;
+  text-align: center;
+  color: #183266;
+  margin-bottom: 2rem;
+}
+
+.additional-info p {
+  font-size: 20px;
+  font-weight: 600;
+  color: #000000;
+  line-height: 1.6;
+  border-left: 4px solid #183266;
+  padding: 0.5rem 1rem;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .contact-banner {
+    height: 300px;
+    width: 100%;
+  }
+
+  .contact-banner h1 {
+    font-size: 2.5rem;
+    line-height: 1.8;
+  }
+
+  .contact-info p {
+    padding: 0rem;
+  }
+
+  .contact-details {
+    padding: 1rem !important;
+  }
+
+  .faq-section {
+    padding: 0rem;
+  }
+
+  .contact-form-container p {
+    padding: 0rem;
+  }
+
+  .contact-form {
+    min-width: auto;
+    width: 100%;
+    padding: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .contact-banner h1 {
+    font-size: 2rem;
+  }
+
+  .contact-info p {
+    padding: 0rem 1rem;
+  }
+
+  .contact-details {
+    padding: 1rem !important;
+  }
+
+  .contact-form-container p {
+    padding: 0rem 1rem;
+  }
+
+  .contact-form {
+    min-width: auto;
+    width: 100%;
+    padding: 1rem;
+  }
+}
