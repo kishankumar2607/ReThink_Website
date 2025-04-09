@@ -29,6 +29,24 @@
   z-index: 1;
 }
 
+.about-content{
+  max-width: 80% !important;
+  background-color: #183266;
+  padding: 2rem 3rem !important;
+  text-align: center;
+  margin: 4rem 0rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 15px rgba(89, 91, 233, 0.2);
+}
+
+.about-content p {
+  color: #ffffff;
+  font-size: 22px;
+  font-weight: 600;
+  line-height: 1.6;
+  margin-bottom: 0;
+}
+
 .about-section {
   max-width: 900px;
   margin: 140px auto 2rem auto;
