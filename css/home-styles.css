@@ -1,0 +1,298 @@
+.hero {
+  position: relative;
+  background: url("../images//rethink-home-banner.jpg") no-repeat center
+    center/cover;
+  height: 90vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: #fff;
+}
+
+.hero::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.hero h1 {
+  position: relative;
+  font-size: 4rem;
+  font-weight: 700;
+  z-index: 1;
+}
+
+.intro-section {
+  background-color: #183266;
+  padding: 2rem 3rem !important;
+  text-align: center;
+  margin: 4rem 0rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 15px rgba(89, 91, 233, 0.2);
+}
+.intro-section h2 {
+  color: #ffffff;
+  margin-bottom: 1rem;
+  font-size: 2.5rem;
+}
+.intro-section p {
+  color: #ffffff;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 1.6;
+  margin-bottom: 0rem;
+}
+
+.cta-buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.button {
+  display: block;
+  width: fit-content;
+  background-color: #fbfe50;
+  color: #183266;
+  padding: 0.75rem 1.2rem;
+  font-size: 18px;
+  font-weight: 700;
+  text-decoration: none;
+  letter-spacing: 1px;
+  border-radius: 4px;
+  margin-top: 1rem;
+  border: 2px solid #fbfe50;
+  transition: all 0.3s ease;
+}
+
+.button:hover {
+  background-color: transparent;
+  color: #fbfe50;
+}
+
+.why-choose {
+  margin: 4rem 0rem;
+}
+
+.why-choose h2 {
+  text-align: center;
+  color: #183266;
+  margin-bottom: 1rem;
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+
+.why-choose p {
+  text-align: center;
+  color: #000000;
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+  line-height: 1.6;
+  font-weight: 600;
+  padding: 0rem 4rem;
+}
+
+.benefits {
+  border: 2px solid #183266;
+  border-radius: 8px;
+  margin: 1.5rem 0rem;
+  padding: 1rem 1.5rem;
+  display: flex;
+  align-items: center;
+}
+
+.benefits:hover {
+  cursor: pointer;
+  background-color: #183266;
+  box-shadow: 0 2px 15px rgba(89, 91, 233, 0.2);
+  transition: all 0.5s ease;
+  transform: translateY(-10px);
+}
+
+.benefits:hover span,
+.benefits:hover p {
+  color: #ffffff !important;
+}
+
+.benefits i {
+  font-size: 2.5rem;
+  color: #183266;
+  margin-right: 1.5rem;
+  padding: 0.5rem;
+  border-radius: 50%;
+  background-color: #fbfe50;
+}
+
+.benefits span {
+  text-align: left;
+  color: #183266;
+  font-size: 18px;
+  font-weight: 700;
+  margin: 0;
+  width: fit-content;
+}
+
+.benefits p {
+  text-align: left;
+  color: #000000;
+  font-size: 18px;
+  line-height: 1.6;
+  font-weight: 400 !important;
+  padding: 0;
+  margin: 0;
+}
+
+.features {
+  margin: 4rem 0rem;
+}
+
+.features h2 {
+  text-align: center;
+  color: #183266;
+  margin-bottom: 2rem;
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+
+.features-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  column-gap: 2rem;
+  row-gap: 4rem;
+  align-items: center;
+  justify-items: center;
+}
+
+.feature {
+  text-align: center;
+  padding: 2rem;
+  background: #183266;
+  border-radius: 8px;
+  box-shadow: 0 2px 15px rgba(89, 91, 233, 0.2);
+  width: 400px;
+  overflow: hidden;
+  transition: transform 0.3s ease;
+}
+
+.feature:hover {
+  transform: scale(1.05);
+}
+
+.feature i {
+  font-size: 4rem;
+  color: #fbfe50;
+  margin-bottom: 1rem;
+}
+
+.feature h3 {
+  font-size: 1.8rem;
+  color: #ffffff;
+  margin-bottom: 0.75rem;
+}
+
+.feature p {
+  font-size: 18px;
+  line-height: 1.6;
+  color: #ffffff;
+  margin-bottom: 0;
+}
+
+/* Testimonials Section */
+.testimonials {
+  background: #ffffff;
+  padding: 4rem 2rem;
+}
+.testimonials h2 {
+  text-align: center;
+  color: #00529b;
+  margin-bottom: 2rem;
+  font-size: 2.5rem;
+}
+.testimonial {
+  background: #f9f9f9;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  margin-bottom: 2rem;
+}
+.testimonial p {
+  font-size: 1.1rem;
+}
+.testimonial strong {
+  display: block;
+  margin-top: 1rem;
+  font-size: 1.1rem;
+}
+
+/* Latest News Section */
+.news-section {
+  background: #e9ecef;
+  padding: 4rem 2rem;
+}
+.news-section h2 {
+  text-align: center;
+  color: #183266;
+  margin-bottom: 2rem;
+  font-size: 2.5rem;
+}
+.news-item {
+  background: #fff;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  margin-bottom: 2rem;
+}
+.news-item h3 {
+  color: #00529b;
+  margin-bottom: 1rem;
+  font-size: 1.8rem;
+}
+.news-item p {
+  font-size: 1.1rem;
+}
+
+/* Call-to-Action Section */
+.cta-section {
+  background: #00529b;
+  color: #fff;
+  padding: 4rem 2rem;
+  text-align: center;
+}
+.cta-section h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+.cta-section a.btn {
+  background: #fff;
+  color: #00529b;
+  padding: 0.75rem 1.5rem;
+  font-size: 1.2rem;
+  text-decoration: none;
+  border-radius: 4px;
+  margin-top: 1rem;
+}
+.cta-section a.btn:hover {
+  background: #e9ecef;
+}
+
+/* Responsive Media Queries */
+@media (max-width: 768px) {
+  .hero h1 {
+    font-size: 3rem;
+  }
+  .section h2 {
+    font-size: 2rem;
+  }
+  .overview-section h2,
+  .features h2,
+  .testimonials h2,
+  .news-section h2 {
+    font-size: 2rem;
+  }
+}
