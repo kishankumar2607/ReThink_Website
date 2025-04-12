@@ -1,6 +1,6 @@
 .hero {
   position: relative;
-  background: url("../images//rethink-home-banner.jpg") no-repeat center
+  background: url("../images/rethink-home-banner.jpg") no-repeat center
     center/cover;
   height: 90vh;
   display: flex;
@@ -201,6 +201,70 @@
   line-height: 1.6;
   color: #ffffff;
   margin-bottom: 0;
+}
+
+.detailed-content{
+  background-color: #183266;
+  color: #ffffff;
+  padding: 4rem 2rem;
+  text-align: center;
+}
+
+.impact-of-digital-communication h2 {
+  margin-bottom: 2rem;
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+
+.impact-of-digital-communication p {
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 1.6;
+  letter-spacing: 0.5px;
+  padding: 0rem 2rem;
+  margin-bottom: 0.2rem;
+  margin-top: 1.3rem;
+}
+
+.how-it-works {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5rem 0rem;
+}
+
+.how-it-works-image{
+  height: 450px;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 8px;
+  box-shadow: 0 2px 15px rgba(89, 91, 233, 0.2);
+}
+
+.how-it-works-content{
+  margin-left: 2rem;
+}
+
+.how-it-works-content h2 {
+  color: #183266;
+  font-size: 2.5rem;
+  margin-bottom: 1.5rem;
+  font-weight: 700;
+}
+
+.how-it-works-content ol li {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.6;
+  color: #000000;
+  margin-bottom: 0.5rem;
+}
+
+.how-it-works-content p {
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 1.6;
+  color: #000000;
 }
 
 /* Testimonials Section */
