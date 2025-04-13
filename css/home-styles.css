@@ -444,11 +444,11 @@
 
   .detailed-content {
     padding: 4rem 0rem;
-}
+  }
 
-.impact-of-digital-communication p {
-  padding: 0rem;
-}
+  .impact-of-digital-communication p {
+    padding: 0rem;
+  }
 }
 
 @media (max-width: 480px) {
@@ -480,5 +480,5 @@
   .feature {
     width: auto;
     padding: 2rem 1rem;
-}
+  }
 }
