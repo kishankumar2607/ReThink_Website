@@ -1,0 +1,171 @@
+.hero {
+  position: relative;
+  background: url("../images/get-rethink-banner.jpg") no-repeat center
+    center/cover;
+  height: 90vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: #fff;
+}
+
+.hero::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.8);
+}
+
+.hero h1 {
+  position: relative;
+  font-size: 4rem;
+  font-weight: 700;
+  line-height: 1.6;
+  color: #ffffff;
+  z-index: 1;
+}
+
+/* Section Styles */
+.section {
+  padding: 4rem 2rem;
+  background: #fff;
+  margin-top: 2rem;
+}
+.section h2 {
+  text-align: center;
+  color: #00529b;
+  margin-bottom: 2rem;
+  font-size: 2.5rem;
+}
+.section p {
+  max-width: 1000px;
+  margin: 0 auto 2rem auto;
+  font-size: 1.2rem;
+  line-height: 1.8;
+}
+
+/* Why Get ReThink Section */
+.why-get {
+  background: #e9ecef;
+  padding: 4rem 2rem;
+}
+.why-get h2 {
+  text-align: center;
+  color: #183266;
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+}
+.why-get p {
+  max-width: 900px;
+  margin: 0 auto 2rem;
+  font-size: 1.2rem;
+  line-height: 1.8;
+  text-align: justify;
+}
+
+/* How to Get Started Section */
+.get-started {
+  background: #fff;
+  padding: 4rem 2rem;
+}
+.get-started h2 {
+  text-align: center;
+  color: #00529b;
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+}
+.get-started ol {
+  max-width: 900px;
+  margin: 0 auto 2rem;
+  font-size: 1.2rem;
+  line-height: 1.8;
+}
+.get-started li {
+  margin-bottom: 1rem;
+}
+
+/* Benefits Section */
+.benefits-section {
+  background: #f9f9f9;
+  padding: 4rem 2rem;
+}
+.benefits-section h2 {
+  text-align: center;
+  color: #183266;
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+}
+.benefits-section p {
+  max-width: 900px;
+  margin: 0 auto 2rem;
+  font-size: 1.2rem;
+  line-height: 1.8;
+  text-align: justify;
+}
+
+/* Extended Information Section */
+.extended-info {
+  background: #ffffff;
+  padding: 4rem 2rem;
+}
+.extended-info h2 {
+  text-align: center;
+  color: #00529b;
+  margin-bottom: 2rem;
+  font-size: 2.5rem;
+}
+.extended-info p {
+  max-width: 1000px;
+  margin: 0 auto 2rem;
+  font-size: 1.2rem;
+  line-height: 1.8;
+  text-align: justify;
+}
+
+/* Call-to-Action Section */
+.cta-section {
+  background: #00529b;
+  color: #fff;
+  padding: 4rem 2rem;
+  text-align: center;
+}
+.cta-section h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+.cta-section p {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+  max-width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.cta-section a.btn {
+  background: #fff;
+  color: #00529b;
+  padding: 0.75rem 1.5rem;
+  font-size: 1.2rem;
+  text-decoration: none;
+  border-radius: 4px;
+}
+.cta-section a.btn:hover {
+  background: #e9ecef;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .hero {
+    height: 400px !important;
+    width: 100% !important;
+  }
+
+    .hero h1 {
+        font-size: 2.5rem;
+        line-height: 1.5;
+        padding: 3rem 0rem;
+    }
+}

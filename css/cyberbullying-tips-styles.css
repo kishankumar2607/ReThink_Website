@@ -23,9 +23,11 @@
 .cyberbullying-tips-hero h1 {
   position: relative;
   font-size: 4rem;
-  font-weight: 900;
+  font-weight: 700;
   color: #ffffff;
   z-index: 1;
+  padding: 0rem 8rem;
+  line-height: 1.6;
 }
 .cyberbullying-tips-intro h2 {
   color: #183266;
@@ -93,15 +95,15 @@
 /* For screens from 768px */
 @media (max-width: 768px) {
   .cyberbullying-tips-hero {
-    height: 300px;
+    height: auto !important;
     width: 100%;
     padding: 3rem 0rem;
   }
 
   .cyberbullying-tips-hero h1 {
-    font-size: 3rem;
-    font-weight: 700;
-    padding: 0rem 6rem;
+    font-size: 2.5rem;
+    line-height: 1.5;
+    padding: 0rem 0rem;
   }
 
   .cyberbullying-tips-intro p {
