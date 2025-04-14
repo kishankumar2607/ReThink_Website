@@ -29,131 +29,257 @@
   z-index: 1;
 }
 
-/* Section Styles */
-.section {
-  padding: 4rem 2rem;
-  background: #fff;
-  margin-top: 2rem;
-}
-.section h2 {
-  text-align: center;
-  color: #00529b;
-  margin-bottom: 2rem;
-  font-size: 2.5rem;
-}
-.section p {
-  max-width: 1000px;
-  margin: 0 auto 2rem auto;
-  font-size: 1.2rem;
-  line-height: 1.8;
+.intro-section {
+  padding: 4rem 0rem;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-/* Why Get ReThink Section */
-.why-get {
-  background: #e9ecef;
-  padding: 4rem 2rem;
-}
-.why-get h2 {
+.intro-text-container {
+  max-width: 80%;
+  background-color: #183266;
+  padding: 2rem 2rem 2.5rem;
+  border-radius: 8px;
+  color: #ffffff;
   text-align: center;
-  color: #183266;
-  font-size: 2.5rem;
-  margin-bottom: 2rem;
-}
-.why-get p {
-  max-width: 900px;
-  margin: 0 auto 2rem;
-  font-size: 1.2rem;
-  line-height: 1.8;
-  text-align: justify;
 }
 
-/* How to Get Started Section */
-.get-started {
-  background: #fff;
-  padding: 4rem 2rem;
-}
-.get-started h2 {
-  text-align: center;
-  color: #00529b;
+.intro-text-container h2 {
   font-size: 2.5rem;
-  margin-bottom: 2rem;
-}
-.get-started ol {
-  max-width: 900px;
-  margin: 0 auto 2rem;
-  font-size: 1.2rem;
-  line-height: 1.8;
-}
-.get-started li {
+  font-weight: 700;
   margin-bottom: 1rem;
 }
 
-/* Benefits Section */
-.benefits-section {
-  background: #f9f9f9;
-  padding: 4rem 2rem;
+.intro-text-container p {
+  font-size: 1.2rem;
+  font-weight: 500;
+  line-height: 1.6;
+  margin-bottom: 2rem;
 }
-.benefits-section h2 {
-  text-align: center;
+
+.button {
+  width: 100%;
+  background-color: #fbfe50;
+  color: #183266;
+  padding: 0.5rem 1rem;
+  font-size: 1.2rem;
+  font-weight: 600;
+  border: 2px solid #fbfe50;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: all 0.3s ease-in;
+}
+
+.button:hover {
+  background-color: transparent;
+  color: #fbfe50;
+}
+
+.why-get {
+  background: url("../images/why-get-rethink-banner.jpg") no-repeat center
+    center/cover;
+  height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.why-get-text-container {
+}
+
+.why-get h2 {
   color: #183266;
   font-size: 2.5rem;
+  font-weight: 700;
   margin-bottom: 2rem;
-}
-.benefits-section p {
-  max-width: 900px;
-  margin: 0 auto 2rem;
-  font-size: 1.2rem;
-  line-height: 1.8;
-  text-align: justify;
 }
 
-/* Extended Information Section */
-.extended-info {
-  background: #ffffff;
-  padding: 4rem 2rem;
+.why-get p {
+  font-size: 1.2rem;
+  font-weight: 600;
+  line-height: 1.6;
+  color: #000000;
+  margin-bottom: 1.5rem;
+  padding-left: 1rem;
+  border-left: 4px solid #183266;
+  width: 60%;
 }
-.extended-info h2 {
-  text-align: center;
-  color: #00529b;
-  margin-bottom: 2rem;
+
+.get-started {
+  padding: 4rem 0rem;
+}
+
+.get-started h2 {
   font-size: 2.5rem;
-}
-.extended-info p {
-  max-width: 1000px;
-  margin: 0 auto 2rem;
-  font-size: 1.2rem;
-  line-height: 1.8;
-  text-align: justify;
+  font-weight: 700;
+  color: #183266;
+  text-align: center;
+  margin-bottom: 2rem;
 }
 
-/* Call-to-Action Section */
-.cta-section {
-  background: #00529b;
-  color: #fff;
-  padding: 4rem 2rem;
+.get-started ol {
+  list-style-type: none;
+  margin: 0rem 4rem;
+  padding-left: 0;
+}
+
+.get-started li {
+  position: relative;
+  margin: 1.8rem 0;
+  font-size: 1.1rem;
+  line-height: 1.6;
+  background-color: #183266;
+  padding: 1rem;
+  border-radius: 8px;
+  transition: all 0.3s ease-in;
+}
+
+.get-started li:hover {
+  transform: translateY(-10px);
+  cursor: pointer;
+}
+
+.get-started ol li strong {
+  font-size: 18px;
+  font-weight: 700;
+  color: #fbfe50;
+}
+
+.get-started ol li {
+  font-size: 18px;
+  font-weight: 600;
+  color: #ffffff;
+}
+
+.benefits-section {
+  background-color: #183266;
+  color: #ffffff;
+  padding: 4rem 0rem;
+}
+
+.benefits-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.benefits-section h2 {
+  color: #ffffff;
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+}
+
+.benefits-section p {
+  font-size: 1.2rem;
+  font-weight: 500;
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
   text-align: center;
 }
+
+.benefits-section ul {
+  list-style: none;
+  padding: 0;
+  margin: 0rem auto;
+}
+
+.benefits-section li {
+  position: relative;
+  padding-left: 2rem;
+  text-align: left;
+  margin-bottom: 1.25rem;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.benefits-section li strong {
+  font-size: 18px;
+  font-weight: 700;
+  color: #fbfe50;
+}
+
+.benefits-section li::before {
+  content: "✔";
+  position: absolute;
+  left: 0;
+  color: #fbfe50 !important;
+  font-weight: bold;
+}
+
+.benefits-note {
+  font-size: 1.2rem;
+  font-weight: 500;
+  line-height: 1.6;
+  text-align: center;
+  margin-bottom: 0;
+}
+
+.extended-info {
+  background-color: #ffffff;
+  padding: 4rem 0rem;
+}
+
+.extended-info h2 {
+  color: #183266;
+  font-size: 2.5rem;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 0.5rem;
+}
+
+.extended-info p {
+  max-width: 80%;
+  margin: 1.5rem auto 0rem;
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: #000000;
+  line-height: 1.6;
+  text-align: center;
+}
+
+.cta-section {
+  background: linear-gradient(135deg, #fbfe50 0%, #fffecf 100%);
+  text-align: center;
+  padding: 4rem 0rem;
+}
+
 .cta-section h2 {
   font-size: 2.5rem;
-  margin-bottom: 1rem;
+  font-weight: 700;
+  color: #183266;
+  margin-bottom: 1.5rem;
 }
+
 .cta-section p {
   font-size: 1.2rem;
-  margin-bottom: 2rem;
-  max-width: 900px;
-  margin-left: auto;
-  margin-right: auto;
+  line-height: 1.6;
+  max-width: 800px;
+  color: #000000;
+  font-weight: 600;
+  margin: 0 auto;
 }
-.cta-section a.btn {
-  background: #fff;
-  color: #00529b;
-  padding: 0.75rem 1.5rem;
-  font-size: 1.2rem;
-  text-decoration: none;
-  border-radius: 4px;
+
+.cta-section .btn {
+  background-color: #183266;
+  color: #fbfe50;
+  padding: 0.8rem 1.5rem;
+  font-size: 1.25rem;
+  font-weight: 700;
+  border-radius: 5px;
+  border: 2px solid #183266;
+  transition: all 0.3s ease-in-out;
+  display: inline-block;
+  margin: 2rem 0rem;
 }
-.cta-section a.btn:hover {
-  background: #e9ecef;
+
+.cta-section .btn:hover {
+  background-color: transparent;
+  color: #183266;
+  border-color: #183266;
 }
 
 /* Responsive Design */
@@ -163,9 +289,60 @@
     width: 100% !important;
   }
 
-    .hero h1 {
-        font-size: 2.5rem;
-        line-height: 1.5;
-        padding: 3rem 0rem;
-    }
+  .hero h1 {
+    font-size: 2.5rem;
+    line-height: 1.5;
+    padding: 3rem 0rem;
+  }
+
+  .why-get {
+    height: 100% !important;
+    width: 100% !important;
+  }
+
+  .why-get p {
+    width: 100%;
+  }
+
+  .get-started ol {
+    margin: 0rem;
+  }
+
+  .get-started li {
+    padding-left: 2.5rem;
+  }
+
+  .get-started li::before {
+    width: 1.5rem;
+    height: 1.5rem;
+    font-size: 0.9rem;
+  }
+
+  .cta-section h2 {
+    font-size: 2rem;
+  }
+
+  .why-get,
+  .get-started,
+  .benefits-section,
+  .extended-info,
+  .cta-section {
+    padding: 3rem 1.2rem;
+  }
+
+  .extended-info p {
+    max-width: 100%;
+    margin: 1.5rem auto 0rem;
+}
+}
+
+@media (max-width: 420px) {
+  .intro-text-container {
+    max-width: 100%;
+    padding: 2rem 1.2rem;
+  }
+
+  .button {
+    font-size: 1rem;
+  }
 }
